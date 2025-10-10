@@ -1,13 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Sixtyfour+Convergence&display=swap');
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(../images/star-bg.png);
+  background-position: center;      
+  background-attachment: fixed;     
+  background-size:cover;
+  color: white !important;
+}
+
+* {
+  cursor: none !important; /* Hide the default cursor */
+}
+
+h2 {
+      font-size: calc(1.325rem + .9vw);
+    color: #9a91e5;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #6155ce;
+  background-color: #6155ce;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease;
+  z-index: 1000;
+  -webkit-box-shadow: 0px 0px 15px 5px #9655cf; 
+  box-shadow: 0px 0px 15px 5px #9655cf;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+section {
+  margin: 80px 0;
+}
+
+.bg-darker {
+  background-color: #121212 !important;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar-brand h1 {
+  color: #9a91e5;
+  text-shadow: rgba(135,9,184,0.83) 0px 0px 19px;
+  font-family: 'Bungee Shade', cursive;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: #9a91e5;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #9a91e5;
+}
+img.img-fluid.rounded-circle.mb-3 {
+  border: 3px solid #9a91e5;
+  box-shadow: rgba(135,9,184,0.83) 0px 0px 19px;
+}
+
+.skills h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skill-card {
+    width: 240px;
+    padding: 20px;
+    background-image: linear-gradient(144deg, #1b1236, #201b31 50%, #0e0c30);
+    border-radius: 10px;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.skill-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+#skills.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  height: 100px;
+
 }

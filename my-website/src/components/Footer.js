@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <footer>
-            {/* Footer content goes here */}
+            <div className="footer bg-darker"></div>
         </footer>
     );
 }

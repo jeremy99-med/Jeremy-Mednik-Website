@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styling/index.css';
 import './styling/bootstrap-5.0.2/css/bootstrap.min.css';
+import './styling/bootstrap-5.0.2/js/bootstrap.min.js';
 import Website from './components/Website';
 import reportWebVitals from './functions/reportWebVitals'
 

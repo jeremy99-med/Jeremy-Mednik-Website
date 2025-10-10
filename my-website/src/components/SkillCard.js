@@ -1,19 +1,20 @@
-const SkillCard = ({ skill }) => {
+const SkillCard = ({ title, description, icon, level }) => {
     return (
-        <div className="skill-card">
+        <div className="skill-card mx-3 my-3">
             <div className="skill-icon">
-                <img src={skill.icon} alt={`${skill.name} icon`} />
+                <img src={icon} alt={`${title} icon`} />
             </div>
             <div className="skill-title">
-                <h3>{skill.name}</h3>
-            </div>
-            <div className="skill-description">
-                {skill.description}
+                <h3>{title}</h3>
             </div>
             <div className="skill-level">
-                Level: {skill.level}
+                Level: {level}
+                <br></br>
+                <br></br>
             </div>
-
+            <div className="skill-description">
+                {description}
+            </div>
         </div>
     );
 };
