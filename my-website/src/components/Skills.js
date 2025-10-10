@@ -92,9 +92,9 @@ const skillCards = [
 
 function Skills() {
     return (
-        <section id="skills" className="flex-wrap">
+        <section id="skills">
             <h2>Skills</h2>
-            <div className="container">
+            <div className="container flex-wrap">
                 {skillCards.map((skill, index) => (
                     <SkillCard key={index} {...skill} />
                 ))}
