@@ -3,7 +3,7 @@ function Header() {
     <header>
       <nav className="navbar navbar-dark bg-darker">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="#about-me">
             <h1>Jeremy Mednik</h1>
           </a>
           <button

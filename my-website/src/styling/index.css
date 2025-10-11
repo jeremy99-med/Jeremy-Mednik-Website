@@ -20,8 +20,8 @@ body {
 }
 
 h2 {
-      font-size: calc(1.325rem + .9vw);
-    color: #9a91e5;
+    font-size: calc(1.325rem + .9vw);
+    color: #9a91e5 !important;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -169,4 +169,30 @@ footer {
 .resume-button:hover span {
   background: none;
   font-weight:bold;
+}
+
+.projectCard a img {
+    height: 200px;
+    width: 200px;
+    justify-self:center;
+}
+
+.projectCard {
+    justify-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    height: 450px;
+}
+
+.projectCard h3 {
+    height: 80px;
+    margin: 10px;
+}
+
+footer div span {
+    color: white !important;
+}
+
+footer ul li a svg {
+    fill: white !important;
 }
