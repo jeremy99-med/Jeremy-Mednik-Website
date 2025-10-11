@@ -8,7 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(../images/star-bg.png);
+  background-image: url(../images/star-bg.png) !important;
   background-position: center;      
   background-attachment: fixed;     
   background-size:cover;
@@ -197,11 +197,11 @@ footer ul li a svg {
     fill: white !important;
 }
 
-@media only screen and (max-width: 1024px) {
+@media screen and (max-device-width: 480px) {
   body {
     font-size: 1.1em;
-    background-image: none;
-    background-color: black;
+    background-image: none !important;
+    background-color: black !important;
   }
   * {
     cursor: auto !important; /* Show default cursor on touch devices */
