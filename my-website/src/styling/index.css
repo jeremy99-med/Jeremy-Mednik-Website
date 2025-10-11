@@ -196,3 +196,17 @@ footer div span {
 footer ul li a svg {
     fill: white !important;
 }
+
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 1.1em;
+    background-image: none;
+    background-color: black;
+  }
+  * {
+    cursor: auto !important; /* Show default cursor on touch devices */
+  }
+  #cursor {
+    display: none !important; /* Hide custom cursor on touch devices */
+  }
+}
