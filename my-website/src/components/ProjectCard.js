@@ -1,15 +1,13 @@
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ title, description,icon }) => {
     return (
-        <div className="project-card">
-            <div className="project-image">
-                <img src={project.image} alt={`${project.name} icon`} />
-            </div>
-            <div className="project-title">
-                <h3>{project.name}</h3>
-            </div>
-            <div className="project-description">
-                {project.description}
-            </div>
+        <div className="projectCard mx-3 my-3">
+            <img
+              src={icon}
+              alt={title}
+              className="img-fluid rounded shadow"
+            />
+            <h5 className="mt-3">{title}</h5>
+            <p>{description}</p>
         </div>
     );
 };
