@@ -209,4 +209,9 @@ footer ul li a svg {
   #cursor {
     display: none !important; /* Hide custom cursor on touch devices */
   }
+
+  .projectCard h3 {
+    font-size: 1.2em;
+    height: auto;
+  }
 }
