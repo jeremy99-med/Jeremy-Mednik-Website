@@ -57,7 +57,7 @@ function MyProjects() {
 const projectCard = { 
     title: "ClipME",
     icon: project,
-    link: "#",
+    link: "https://clipmereviews.com",
     description: "A website where users can publish reviews for websites and web applications. Users can rate the websites on various criteria such as usability, design, and content. The platform allows users to follow other users, comment on reviews, and share their favorite websites. The website is built using React for the frontend and Node.js with Django for the backend, with data stored in a AWS Aurora Postgres database."
 }
 
