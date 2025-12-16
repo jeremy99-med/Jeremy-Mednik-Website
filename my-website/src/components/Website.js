@@ -12,8 +12,8 @@ function Website() {
       <Cursor/>
       <Header/>
       <AboutMe/>
-      <Skills/>
       <MyProjects/>
+      <Skills/>
       <Resume/>
       <Footer/>
     </div>
