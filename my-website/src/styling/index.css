@@ -8,10 +8,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(../images/star-bg.png) !important;
+  background-image: url(../images/star-bg.svg) !important;
   background-position: center;      
   background-attachment: fixed;     
-  background-size:cover;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white !important;
 }
 

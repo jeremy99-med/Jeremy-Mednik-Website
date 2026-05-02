@@ -11,6 +11,9 @@ import gitIcon from "../images/skills-images/gitlogo.png";
 import reactIcon from "../images/skills-images/Reactlogo.png";
 import apiIcon from "../images/skills-images/restapilogo.png";
 import awsIcon from "../images/skills-images/awslogo.png";
+import claudeIcon from "../images/skills-images/claudelogo.png";
+import kotlinIcon from "../images/skills-images/kotlinlogo.png";
+import springBootIcon from "../images/skills-images/springbootlogo.png";
 import Slider from "react-slick";
 
 function Skills() {
@@ -117,6 +120,30 @@ function Skills() {
     level: "Beginner",
   };
 
+  const skillCardClaude = {
+    title: "Claude AI",
+    description:
+      "Experience using Anthropic's Claude AI for various tasks including code generation, research, and problem-solving.",
+    icon: claudeIcon,
+    level: "Intermediate",
+  };
+
+  const skillCardKotlin = {
+    title: "Kotlin",
+    description:
+      "Used in full-stack development projects, particularly for backend services and Android applications.",
+    icon: kotlinIcon,
+    level: "Intermediate",
+  };
+
+  const skillCardSpringBoot = {
+    title: "Spring Boot",
+    description:
+      "Framework for building Java-based enterprise applications, used in backend development for scalable web services.",
+    icon: springBootIcon,
+    level: "Intermediate",
+  };
+
   const skillCards = [
     skillCardJavaScript,
     skillCardCSharp,
@@ -129,6 +156,9 @@ function Skills() {
     skillCardReact,
     skillCardWebApi,
     skillCardAwS,
+    skillCardClaude,
+    skillCardKotlin,
+    skillCardSpringBoot,
   ];
 
   return (

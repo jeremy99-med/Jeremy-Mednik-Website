@@ -2,10 +2,14 @@ import React from "react";
 import Slider from "react-slick";
 import ProjectCard from "./ProjectCard";
 import project from "../images/projects/clipme.png";
+import foodBridge from "../images/projects/foodbridgelogo.png";
 import project1 from "../images/projects/nbastatviewer.png";
 import project2 from "../images/projects/taskmanagement.png";
 import project3 from "../images/projects/calculatorapp.png";
 import project4 from "../images/projects/chessproject.png";
+import careQuery from "../images/projects/CareQuery.png";
+import d3Visualizations from "../images/projects/D3Visualizations.png";
+import diskScheduling from "../images/projects/disk-sheduling.png";
 
 
 
@@ -28,6 +32,13 @@ function MyProjects() {
         },
       },
     ],
+  };
+
+  const foodBridgeCard = {
+    title: "FoodBridge",
+    icon: foodBridge,
+    link: "https://lnkd.in/eEuYfjwK",
+    description: "1st place winner at George Hacks x United Nations for an AI-powered meal planning app that creates personalized 7-day plans, grocery lists, and SNAP/WIC-friendly recommendations based on health, allergies, and cultural food preferences.",
   };
 
   const project1Card = {
@@ -61,7 +72,28 @@ const projectCard = {
     description: "A website where users can publish reviews for websites and web applications. Users can rate the websites on various criteria such as usability, design, and content. The platform allows users to follow other users, comment on reviews, and share their favorite websites. The website is built using React for the frontend and Node.js with Django for the backend, with data stored in a AWS Aurora Postgres database."
 }
 
-  const projectCards = [projectCard,project1Card, project2Card, project3Card, project4Card];
+  const careQueryCard = {
+    title: "CareQuery — FHIRScope",
+    icon: careQuery,
+    link: "#", // Assuming no link provided
+    description: "A full-stack patient medication viewer powered by the FHIR R4 standard. Search for patients by name, view their full medication history, and add new medications — all backed by the HAPI FHIR public sandbox. Drug name autocomplete is provided by the NLM RxNorm API. Written in Kotlin and React."
+  };
+
+  const d3VisualizationsCard = {
+    title: "D3 NBA Visualizations",
+    icon: d3Visualizations,
+    link: "#", // Assuming no link provided
+    description: "Visualizations of NBA player statistics. Includes a line chart showing season point totals by player and a streamgraph displaying relative scoring share over time. Both charts use effective visual channels to make comparisons clear, leveraging position and color for encoding quantitative values and player identity."
+  };
+
+  const diskSchedulingCard = {
+    title: "HDD Disk Scheduling Simulator",
+    icon: diskScheduling,
+    link: "#", // Assuming no link provided
+    description: "A C implementation of classic HDD disk-scheduling algorithms, built for CSC-665 as a hands-on companion to Operating Systems Concepts. The simulator accepts an initial head position, sweep direction, an optional seek rate, and a list of pending cylinder requests, then runs all three algorithms and prints each seek sequence alongside a side-by-side movement and seek time comparison."
+  };
+
+  const projectCards = [foodBridgeCard, projectCard, project1Card, project2Card, project3Card, project4Card, careQueryCard, d3VisualizationsCard, diskSchedulingCard];
 
   return (
     <section id="my-projects" className="my-5 text-center">
